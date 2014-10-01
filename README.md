@@ -1,3 +1,3 @@
 DaisyAudioReader
 ================
-Daisy Audio Reader is a audio reader for visually challenged
+Daisy Audio Reader is an audio reader for visually challenged
