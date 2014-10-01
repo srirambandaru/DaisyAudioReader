@@ -1,0 +1,140 @@
+img
+{
+	width:40px;
+	height:40px;
+	border:none;
+}
+.grid
+{
+	display:inline;
+	float: left;
+	position: relative;
+}
+#accordion1 a
+{
+	cursor:pointer;
+	text-decoration:none;
+}
+#accordion1 a:hover
+{
+	color:blue; 
+}	
+#accordion a
+{
+	cursor:pointer;
+	text-decoration:none;
+}
+#accordion a:hover
+{
+	color:blue;                        
+}
+#logout
+{
+	font-size:1em;
+	color:#3399cc;
+	width:100px;
+	height:40px;
+	font-family:Helvetica;
+	font-weight:bold;
+}
+#logout-div
+{
+	text-align:right;
+	width:1200;
+}
+#logout:hover
+{
+	color:red;
+}
+body
+{	
+	border: none; 
+}
+#accordion li, #accordion1 li 
+{
+	font-size:1em;
+}
+#wrapper
+{
+	width: 1200px; 
+	margin: 0 auto; 
+	text-decoration:none;
+}
+#wrapper-body
+{
+	padding-top:60px;
+	width: 1200px; 
+	margin: 0 auto; 
+	text-decoration:none;
+}
+#left-accordion
+{
+	width:300px;
+}
+#right-accordion
+{
+	width:300px;
+}
+#video-element
+{
+	text-align:center;
+	width:600px;
+}
+#video
+{
+	float:left;
+}
+#menubar
+{
+	display:inline;
+	overflow:hidden;
+	height:40px;
+}
+#slider
+{
+	position:relative;
+	float:left;
+	width:10px;
+	height:95px;
+	background-color:black;
+	margin:20px;
+}
+#navAlign
+{
+	width:1200px;
+	background-color:#666;
+}
+.navigation
+{
+	
+	width:720px;
+	background-color:#444;
+	height:46px;
+	
+	left: 50%;
+}
+.navigation ul
+{
+	z-index: 5000;	
+	padding-bottom:10px;
+}
+.navigation ul li 
+{
+    position: relative;
+	padding: 10px;
+	padding-left:20px;
+	padding-right:21px;
+	font-size: 1.3em;
+	float: left; 
+	list-style: none; 	
+}
+.navigation ul li a {
+	color: #fbd850; text-decoration:none; font-weight:bold; font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	text-decoration: none;
+	text-align: center;
+}			
+#search-div
+{
+	width:100%;
+	height:400px;
+}

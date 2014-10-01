@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="AUTO-UID-0005" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="0:00:00" name="dtb:totalElapsedTime"/>
+		    <customAttributes>
+		       <customTest defaultState="false" id="pagenum" override="visible"/>
+      </customAttributes>
+	  </head>
+	  <body>
+		    <seq dur="0:00:01.600" fill="remove" id="mseq">
+		       <par id="tcp1">
+            <text id="text1" src="prnayathinte_thirichadiout.xml#dtb1"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:01" src="speechgen0001.mp3"/>
+         </par>
+         <par id="tcp2">
+            <text id="text2" src="prnayathinte_thirichadiout.xml#dtb2"/>
+            <audio clipBegin="0:00:01" clipEnd="0:00:01.200" src="speechgen0001.mp3"/>
+         </par>
+         <par customTest="pagenum" id="tcp3">
+            <text id="text3" src="prnayathinte_thirichadiout.xml#page0005"/>
+            <audio clipBegin="0:00:01.200" clipEnd="0:00:01.400" src="speechgen0001.mp3"/>
+         </par>
+         <par id="tcp4">
+            <text id="text4" src="prnayathinte_thirichadiout.xml#dtb3"/>
+            <audio clipBegin="0:00:01.400" clipEnd="0:00:01.600" src="speechgen0001.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

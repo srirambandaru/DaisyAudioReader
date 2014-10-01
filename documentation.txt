@@ -1,0 +1,105 @@
+The website is made using HTML5, php and uses the sql databases.Also
+uses javascript(ajax, jquery) extensively. If the user turns of 
+javascript in the browser, website will not work. Also for the best
+results, user has to use google chrome where it was tested thoroughly. 
+Using firefox and Internet Explorer may not provide the desired results.
+
+Dependencies: APACHE 2.0+, PHP5, MYSQL5.0
+For best results, the above dependencies must be followed.
+
+Directory Structure: Inside website folder, there are few folders named
+css, images, html_includes, js, php_includes, Model, Books,
+Compressed_books, logs.
+Since there is no configuration file, these file names must not be 
+changed at any point of time.
+Books: All the books must be copied into this folder. The foldername 
+is considered as the bookaddress and it must be same as the one, that
+is given in the bookdetails table of database.
+compressed_books: All the zip file must be copied into this folder.
+Website searches for the bookname.zip in this folder only for downloading
+css: All the styling files are in this folder
+js: Javascript files are stored in this folder
+images: All the images are stored in this folder
+html_includes: There should be two files in this folder named header.html
+and footer.html. These two files are included in all the view files(php files)
+php_includes: There should be two files in this folder named db_conx.php and 
+check_login_status.php.
+	db_conx.php: This is the database connection file. Wherever there is an
+				 sql call, this file is included. An object is created named
+				 db_conx in this file and can be used after including the file
+	check_login_status.php: This is used to check, if there is any user logged
+							in currently. It checks for the session values and
+							cookie values.
+logs: A log file for each user is created in this folder. All the user actions
+	  are stored in this file
+Model: All the model files resides in this folder. Only from these model files
+	   website connects to the database, gathers the data and displays it 
+	   using view pages.
+	 
+
+Php Files: There are few php files in the folder named about.php, contact.php,
+create_table.php, downloadDesktop.php, downloads.php, help.php, home.php, 
+index.php, log.php, logout.php, search.php, signup.php.
+create_table.php: This is just for creating the tables in the databases. 
+Other than that, the website doesn't use this file anywhere
+about.php: The link to this is available in the menubar of every page. 
+The information about the creators and other important info is displayed 
+here.
+contact.php: The link to this is available in the menubar of every page.
+Contact information is displayed here
+downloadDesktop.php: Link is available in the menubar. Desktop application
+software links must be placed here
+downloads.php: This page enables user to download an audio file in the zip
+format. File first checks for any metadata.dlf or bookmark.dlf files,
+deletes them and then creates the  metadata.dlf and bookmark.dlf, then 
+adds these files to the zip. The zip file will downloaded then.
+metadata.dlf has all the information stored in the bookdetails table
+in the database each seperated by "$" sign. Bookmarks.dlf also has
+all the information stored in boomarks table in the database each
+seperated by "$" sign.
+help.php: Link is available in the menubar of every page. Basic instructions
+and keyboard shortcuts are included in this file
+home.php: This is the main file. Books will be played in this page only.
+It uses many functions of functionality.js javascript file and assumes 
+there is a navigation.dlf file in the book requested. Also has the 
+book library and mybooks library. 
+index.php: Checks if the user is logged in or not, if not will ask 
+for the user to login. Also has the link to signup.php. Uses AJAX,
+JAVASCRIPT.. User must enable javascript for this page to work as
+desired.
+log.php: Called using AJAX. Sends two values as post data, one is
+message and the other one is username. Based on the username, it
+creates a log file, if it doesn't exist and stores all the info
+in that file.
+logout.php: This file is called whenever the user presses on the
+logout button available on all the pages. Deletes the session variables
+and cookies.
+search.php: Asks for a query can be author name, bookname, language or 
+publisher. Sends the data to search_model.php where it gets processed
+and recieves a result set from that file which is displayed as a
+table here.
+signup.php: Checks if the user is aleary logged in. If already logged
+in, it redirects to home.php. Else it asks for some information such 
+as username, email, password. Username and email must be unique. Checks
+the database using AJAX. If the entered values are already existing in 
+the database then raises error and ask for different values.
+
+Model:
+home_model.php: Contains three functions named showBookmarks, showallbooks
+and showmybooks which gathers the data from the database and returns 
+the result set to the view part.
+addBooks_model.php: This is called by an AJAX function which sends some
+post data such as bookname, userid. This file inserts these values into
+the databases.
+bookmark_model.php: Same as addbooks_model.php
+feedback_model.php: Same as addbooks_model.php
+login_model.php: This file is being called by an AJAX function in 
+index.php which sends the username and password entered. Matches
+the information in the databases and if any result matches sends 
+success else returns failure
+searchResults_model.php: Files is being called by search.php which
+sends the query processes the query and send back the result by 
+encoding it in the url.
+signup_model.php: Being called by signup.php. If the entered values
+are all valid, then inserts the value into the database else returns
+false.

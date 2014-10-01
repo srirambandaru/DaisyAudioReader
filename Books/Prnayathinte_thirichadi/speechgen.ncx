@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx
+  PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="ml">
+	  <head>
+		    <meta content="AUTO-UID-0005" name="dtb:uid"/>
+		    <meta content="1" name="dtb:depth"/>
+		
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="4" name="dtb:totalPageCount"/>
+		    <meta content="9" name="dtb:maxPageNumber"/>
+	     <smilCustomTest bookStruct="PAGE_NUMBER" defaultState="false" id="pagenum" override="visible"/>
+   </head>
+  
+	  <docTitle>
+	     <text>﻿PranayathinteThirichadi</text>
+      <audio clipBegin="0:00:00" clipEnd="0:00:01" src="speechgen0001.mp3"/>
+   </docTitle>
+  
+	  <docAuthor>
+	     <text>unknown</text>
+      <audio clipBegin="0:00:01" clipEnd="0:00:01.200" src="speechgen0001.mp3"/>
+   </docAuthor>
+	
+	  <navMap id="navMap">
+      <navPoint class="h1" id="ncx-2" playOrder="2">
+         <navLabel>
+            <text>Empty Heading</text>
+            <audio clipBegin="0:00:01.400" clipEnd="0:00:01.600" src="speechgen0001.mp3"/>
+         </navLabel>
+         <content src="speechgen0001.smil#tcp4"/>
+      </navPoint>
+   </navMap>
+	
+	  <pageList id="page">
+      <pageTarget class="pagenum" id="ncx-1" playOrder="1" type="normal" value="0005">
+         <navLabel>
+            <text>0005</text>
+            <audio clipBegin="0:00:01.200" clipEnd="0:00:01.400" src="speechgen0001.mp3"/>
+         </navLabel>
+         <content src="speechgen0001.smil#tcp3"/>
+      </pageTarget>
+      <pageTarget class="pagenum" id="ncx-3" playOrder="3" type="normal" value="0007">
+         <navLabel>
+            <text>0007</text>
+            <audio clipBegin="0:00:22.025" clipEnd="0:00:22.225" src="speechgen0007.mp3"/>
+         </navLabel>
+         <content src="speechgen0007.smil#tcp28"/>
+      </pageTarget>
+      <pageTarget class="pagenum" id="ncx-4" playOrder="4" type="normal" value="0008">
+         <navLabel>
+            <text>0008</text>
+            <audio clipBegin="0:00:06.290" clipEnd="0:00:06.490" src="speechgen0012.mp3"/>
+         </navLabel>
+         <content src="speechgen0012.smil#tcp49"/>
+      </pageTarget>
+      <pageTarget class="pagenum" id="ncx-5" playOrder="5" type="normal" value="0009">
+         <navLabel>
+            <text>0009</text>
+            <audio clipBegin="0:00:05.320" clipEnd="0:00:05.520" src="speechgen0014.mp3"/>
+         </navLabel>
+         <content src="speechgen0014.smil#tcp60"/>
+      </pageTarget>
+   </pageList>
+  
+</ncx>

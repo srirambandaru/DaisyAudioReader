@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="AUTO-UID-0005" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="0:03:05.645" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:01:14.075" fill="remove" id="mseq">
+		       <par id="tcp40">
+            <text id="text40" src="prnayathinte_thirichadiout.xml#dtb38"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:08.415" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp41">
+            <text id="text41" src="prnayathinte_thirichadiout.xml#dtb39"/>
+            <audio clipBegin="0:00:08.415" clipEnd="0:00:17.625" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp42">
+            <text id="text42" src="prnayathinte_thirichadiout.xml#dtb40"/>
+            <audio clipBegin="0:00:17.625" clipEnd="0:00:22.140" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp43">
+            <text id="text43" src="prnayathinte_thirichadiout.xml#dtb41"/>
+            <audio clipBegin="0:00:22.140" clipEnd="0:00:25.420" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp44">
+            <text id="text44" src="prnayathinte_thirichadiout.xml#dtb42"/>
+            <audio clipBegin="0:00:25.420" clipEnd="0:00:52.265" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp45">
+            <text id="text45" src="prnayathinte_thirichadiout.xml#dtb43"/>
+            <audio clipBegin="0:00:52.265" clipEnd="0:01:13.875" src="speechgen0011.mp3"/>
+         </par>
+         <par id="tcp46">
+            <text id="text46" src="prnayathinte_thirichadiout.xml#dtb44"/>
+            <audio clipBegin="0:01:13.875" clipEnd="0:01:14.075" src="speechgen0011.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

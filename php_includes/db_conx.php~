@@ -1,0 +1,12 @@
+<?php
+$db_found = false;
+$db_conx = mysqli_connect("localhost", "root", "iiit123", "reader");
+// Evaluate the connection
+if (mysqli_connect_errno()) {
+    echo mysqli_connect_error();
+    exit();
+} else {
+	//echo "Successful database connection, happy coding!!!";
+	$db_found=true;
+}
+?>
